@@ -24,10 +24,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Hero](./images/screenshot/Screenshot%201.png)
-![About Manage](./images/screenshot/Screenshot%202.png)
-![Slider](./images/screenshot/Screenshot%203.png)
-![cta and Footer](./images/screenshot/Screenshot%204.png)
+![Hero](./dist/./images/screenshot/Screenshot%201.png)
+![About Manage](./dist/./images/screenshot/Screenshot%202.png)
+![Slider](./dist/./images/screenshot/Screenshot%203.png)
+![cta and Footer](./dist/./images/screenshot/Screenshot%204.png)
 
 ## My process
 
