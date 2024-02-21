@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* primary */
+    --bright-red: 12deg 88% 59%;
+    --dark-blue: 228deg 39% 23%;
+
+    /* neutral */
+    --dark-grayish-blue: 227deg 12% 61%;
+    --very-dark-blue: 233deg 12% 13%;
+    --very-pale-red: 13deg 100% 96%;
+    --very-light-gray: 0deg 0% 97%;
+    --neutral: 0deg 0% 100%;
+  }
+  html {
+    font-family: "Be Vietnam Pro", system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .a11y-slider-autoplay {
+    @apply sr-only;
+  }
+}

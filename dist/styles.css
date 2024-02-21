@@ -1,0 +1,122 @@
+/* hero blob */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 87%;
+  max-height: 70vh;
+  max-height: 70dvh;
+  aspect-ratio: 1 / 1.2;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+/* about blob */
+.about-blob::before {
+  content: url(./images/bg-tablet-pattern.svg);
+  position: absolute;
+  /* zoom: 40%; */
+  z-index: -1;
+  left: 65%;
+  bottom: 80%;
+  width: 100px;
+}
+/* cta blob */
+.cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: url(./images/bg-tablet-pattern.svg),
+    url(./images/bg-tablet-pattern.svg);
+  opacity: 0.1;
+  background-position: -1rem -5rem, 90rem -42rem;
+  background-repeat: no-repeat;
+}
+/* slider */
+.a11y-slider-container {
+  margin-block: 3rem;
+  margin-inline: 1rem;
+}
+.a11y-slider-autoplay {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.a11y-slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-block: 1.5rem;
+  gap: 0.75rem;
+}
+.a11y-slider-dots li {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+}
+
+.a11y-slider-dots li button {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: transparent;
+  border: 1px solid hsl(12, 88%, 59%) !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.a11y-slider-dots li button.active {
+  background: hsl(12, 88%, 59%);
+}
+@media (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+  .nav ul {
+    flex-direction: row;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+@media (min-width: 60em) {
+  .a11y-slider-container {
+    margin-inline: 0;
+  }
+  .hero-image::before {
+    width: 45%;
+  }
+  .about-blob::before {
+    zoom: 90%;
+    z-index: -1;
+    left: -500px;
+    top: 42%;
+    width: 100px;
+  }
+}
+@media (max-width: 60em) {
+  .primary-header[data-overlay]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    /* height: 100vh; */
+    background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+  }
+  .cta::before {
+    background-position: -40rem -5rem, 90rem -42rem;
+  }
+  footer > div {
+    place-items: center;
+  }
+}

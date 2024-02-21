@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- a11yslider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
+
+    <script
+      src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"
+      defer
+    ></script>
+    <script src="main.js" defer></script>
+    <title>Manage landing page</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navigation -->
+    <header class="primary-header container p-4 pt-12 flex justify-between">
+      <a href=""
+        ><svg class="icon" width="146" height="24">
+          <use xlink:href="./images/logo.svg#logo"></use>
+        </svg>
+      </a>
+      <button class="nav-toggle hover:opacity-90" aria-hidden="true">
+        <img
+          class="toggle-img"
+          src="./images/icon-hamburger.svg"
+          alt="menu toggle"
+        />
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav
+        class="nav sm:absolute sm:top-[7rem] sm:inset-x-4 sm:p-8 sm:bg-neutral sm:rounded-md sm:shadow-[0_0_0.75rem_rgb(0,0,0,0.5)] sm:max-w-[25rem] sm:mx-auto sm:before:bg-gradient-to-b sm:before:from-[black] sm:before:to-[rgb(0 0 0/0.8)] hidden"
+        aria-hidden="true"
+      >
+        <ul
+          class="flex flex-col sm:text-center sm:font-bold md:flex-row gap-7 md:gap-4 capitalize text-dark_blue"
+        >
+          <li><a href="#">pricing</a></li>
+          <li><a href="#">product</a></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">careers</a></li>
+          <li><a href="#">community</a></li>
+        </ul>
+      </nav>
+      <button class="sm:hidden">
+        <a
+          href="#"
+          class="py-4 px-8 bg-bright_red text-white capitalize rounded-3xl shadow-lg shadow-very_pale_red font-bold hover:opacity-90"
+          >get started</a
+        >
+      </button>
+    </header>
+    <main class="main">
+      <!-- section 1 -->
+      <section
+        class="container intro-section flex flex-col gap-5 md:flex-row md:justify-between py-16"
+      >
+        <article class="info md:w-[45%] text-center md:text-left">
+          <h1 class="text-dark_blue text-5xl md:text-7xl font-bold py-6">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="text-dark_grayish_blue md:w-[45%] py-6">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button class="py-6">
+            <a
+              href="#"
+              class="py-4 px-8 bg-bright_red text-white capitalize rounded-3xl shadow-lg shadow-very_pale_red font-bold hover:opacity-90"
+              >get started</a
+            >
+          </button>
+        </article>
+        <div class="hero-image -order-1 mx-auto md:order-1">
+          <picture>
+            <source srcset="./images/illustration-intro.svg" type="svg" />
+            <img
+              src="./images/illustration-intro.svg"
+              alt="chart illustrations"
+            />
+          </picture>
+        </div>
+      </section>
+      <!-- About Manage -->
+      <section
+        class="about relative container flex flex-col md:flex-row justify-between py-16 gap-14"
+      >
+        <article class="about-blob md:w-[45%] text-center md:text-left">
+          <h1 class="text-dark_blue text-5xl font-bold pb-6">
+            What’s different about Manage?
+          </h1>
+          <p class="text-dark_grayish_blue">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </article>
+        <article class="md:w-[50%] grid gap-7">
+          <div
+            class="grid grid-cols-[min-content_1fr] md:grid-cols-[auto] md:grid-rows-[auto] gap-y-3 gap-x-5"
+          >
+            <span
+              class="bg-bright_red text-white px-6 py-1.5 rounded-3xl col-start-1 font-bold sm:shadow-[2em_0_0_hsl(var(--very-pale-red))]"
+              >01</span
+            >
+            <h2
+              class="text-dark_blue font-bold py-1.5 sm:bg-very_pale_red md:col-start-2 md:col-span-2 self-center sm:shadow-[5em_0_0_hsl(var(--very-pale-red))]"
+            >
+              Track company-wide progress
+            </h2>
+            <p
+              class="text-dark_grayish_blue col-start-1 col-span-2 row-start-2 md:col-start-2"
+            >
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-[min-content_1fr] md:grid-cols-[auto] md:grid-rows-[auto] gap-y-3 gap-x-5"
+          >
+            <span
+              class="bg-bright_red text-white px-6 py-1.5 rounded-3xl col-start-1 font-bold sm:shadow-[2em_0_0_hsl(var(--very-pale-red))]"
+              >02</span
+            >
+            <h2
+              class="text-dark_blue font-bold py-1.5 sm:bg-very_pale_red md:col-start-2 self-center sm:shadow-[5em_0_0_hsl(var(--very-pale-red))]"
+            >
+              Advanced built-in reports
+            </h2>
+            <p
+              class="text-dark_grayish_blue col-start-1 col-span-2 row-start-2 md:col-start-2"
+            >
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-[min-content_1fr] md:grid-cols-[auto] md:grid-rows-[auto] gap-y-3 gap-x-5"
+          >
+            <span
+              class="bg-bright_red text-white px-6 py-1.5 rounded-3xl col-start-1 font-bold sm:shadow-[2em_0_0_hsl(var(--very-pale-red))]"
+              >03</span
+            >
+            <h2
+              class="text-dark_blue font-bold py-1.5 sm:bg-very_pale_red md:col-start-2 md:col-span-2 self-center sm:shadow-[5em_0_0_hsl(var(--very-pale-red))]"
+            >
+              Everything you need in one place
+            </h2>
+            <p
+              class="text-dark_grayish_blue col-start-1 col-span-2 row-start-2 md:col-start-2"
+            >
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Reviews -->
+      <section class="reviews py-16">
+        <h1 class="text-center text-dark_blue text-5xl font-bold">
+          What they’ve said
+        </h1>
+        <ul class="slider pt-20 pb-5 md:pb-20 flex gap-6">
+          <li class="w-full md:w-[50%] lg:w-[35%] grow-0 shrink-0 basis-auto">
+            <div
+              class="card relative bg-very_light_gray text-center px-8 py-12"
+            >
+              <picture
+                class="absolute -top-10 left-1/2 -translate-x-[24%] rounded-sm"
+              >
+                <source srcset="./images/avatar-anisha.png" type="image/png" />
+                <img
+                  src="./images/avatar-anisha.png"
+                  alt="person image"
+                  class="max-w-[100%] w-[50%]"
+                />
+              </picture>
+              <h1 class="text-dark_blue font-bold">Anisha Li</h1>
+              <p class="text-dark_grayish_blue text-lg">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </li>
+
+          <li class="w-full md:w-[50%] lg:w-[35%] grow-0 shrink-0 basis-auto">
+            <div
+              class="card relative bg-very_light_gray text-center px-4 py-12"
+            >
+              <picture
+                class="absolute -top-10 left-1/2 -translate-x-[24%] rounded-sm"
+              >
+                <source srcset="./images/avatar-ali.png" type="image/png" />
+                <img
+                  src="./images/avatar-ali.png"
+                  alt="person image"
+                  class="max-w-[100%] w-[50%]"
+                />
+              </picture>
+              <h1 class="text-dark_blue font-bold">Ali Bravo</h1>
+              <p class="text-dark_grayish_blue text-lg">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+          </li>
+          <li class="w-full md:w-[50%] lg:w-[35%] grow-0 shrink-0 basis-auto">
+            <div
+              class="card relative bg-very_light_gray text-center px-4 py-12"
+            >
+              <picture
+                class="absolute -top-10 left-1/2 -translate-x-[24%] rounded-sm"
+              >
+                <source srcset="./images/avatar-richard.png" type="image/png" />
+                <img
+                  src="./images/avatar-richard.png"
+                  alt="person image"
+                  class="max-w-[100%] w-[50%]"
+                />
+              </picture>
+              <h1 class="text-dark_blue font-bold">Richard Watts</h1>
+              <p class="text-dark_grayish_blue text-lg">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </li>
+          <li class="w-full md:w-[50%] lg:w-[35%] grow-0 shrink-0 basis-auto">
+            <div
+              class="card relative bg-very_light_gray text-center px-4 py-12"
+            >
+              <picture
+                class="absolute -top-10 left-1/2 -translate-x-[24%] rounded-sm"
+              >
+                <source srcset="./images/avatar-shanai.png" type="image/png" />
+                <img
+                  src="./images/avatar-shanai.png"
+                  alt="person image"
+                  class="max-w-[100%] w-[50%]"
+                />
+              </picture>
+              <h1 class="text-dark_blue font-bold">Shanai Gough</h1>
+              <p class="text-dark_grayish_blue text-lg">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="flex justify-center">
+          <button>
+            <a
+              href="#"
+              class="py-4 px-8 bg-bright_red text-white capitalize rounded-3xl shadow-lg shadow-very_pale_red font-bold hover:opacity-90"
+              >get started</a
+            >
+          </button>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section class="cta relative isolate bg-bright_red p-20">
+        <div
+          class="container flex flex-col text-center gap-12 md:text-left md:flex-row justify-between"
+        >
+          <h1 class="text-white text-5xl font-bold md:w-[50%]">
+            Simplify how your team works today.
+          </h1>
+          <button>
+            <a
+              href=""
+              class="py-4 px-8 text-bright_red bg-white capitalize rounded-3xl font-bold hover:opacity-90"
+              >get started</a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-very_dark_blue text-white py-20">
+      <div
+        class="container grid grid-cols-1 grid-rows-5 sm:place-items-center md:grid-cols-3 md:grid-rows-2"
+      >
+        <a href="#" class="row-start-4 md:row-start-1"
+          ><svg class="icon" width="160" height="35">
+            <use xlink:href="./images/logo-white.svg#logo"></use>
+          </svg>
+        </a>
+        <div
+          class="social flex gap-7 row-start-3 md:col-start-1 md:row-start-2"
+        >
+          <a href="#"
+            ><svg
+              class="w-11 aspect-square fill-white focus:fill-bright_red hover:fill-bright_red md:w-7"
+            >
+              <use xlink:href="./images/social-icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+
+          <a href="#"
+            ><svg
+              class="w-11 aspect-square fill-white focus:fill-bright_red hover:fill-bright_red md:w-7"
+            >
+              <use xlink:href="./images/social-icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a href="#"
+            ><svg
+              class="w-11 aspect-square fill-white focus:fill-bright_red hover:fill-bright_red md:w-7"
+            >
+              <use xlink:href="./images/social-icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#"
+            ><svg
+              class="w-11 aspect-square fill-white focus:fill-bright_red hover:fill-bright_red md:w-7"
+            >
+              <use xlink:href="./images/social-icons.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+          <a href="#"
+            ><svg
+              class="w-11 aspect-square fill-white focus:fill-bright_red hover:fill-bright_red md:w-7"
+            >
+              <use xlink:href="./images/social-icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="flex gap-24 md:justify-between row-start-2 md:row-start-1 md:col-start-2"
+        >
+          <nav>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="#" class="hover:text-bright_red focus:text-bright_red"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-bright_red focus:text-bright_red"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-bright_red focus:text-bright_red"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-bright_red focus:text-bright_red"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="#" class="hover:text-bright_red focus:text-bright_red"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-bright_red focus:text-bright_red"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-bright_red focus:text-bright_red"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div
+          class="input-div relative row-start-1 md:col-start-3 md:justify-self-end"
+        >
+          <input
+            class="email-input px-6 py-3 rounded-full text-dark_grayish_blue text-left font-medium mr-2"
+            type="email"
+            placeholder="Updates in your inbox…"
+          />
+          <span
+            class="error-span absolute top-14 left-5 italic text-red-700"
+          ></span>
+
+          <button class="submit-btn">
+            <a
+              href="#"
+              class="py-3 px-6 bg-bright_red font-bold rounded-full hover:opacity-90"
+              >Go</a
+            >
+          </button>
+        </div>
+        <p
+          class="text-dark_grayish_blue text-center md:text-right md:col-end-4 md:row-start-2"
+        >
+          Go Copyright 2020. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
